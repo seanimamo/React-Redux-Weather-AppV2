@@ -19,14 +19,14 @@ class SearchBar extends Component {
   }
     
   onInputChange(event){
-    this.setState({searchTerm: event.target.value, renderCount: this.state.renderCount+=1});
+    this.setState({searchTerm: event.target.value, renderCount: this.state.renderCount + 1});
   }
 
   submitSearch (event) {
     //this line stops the page from refreshing when the user submits on a form by default
     event.preventDefault();
     this.props.fetchWeather(this.state.searchTerm);
-    this.setState({searchTerm: `You Just Searched for: ${this.state.searchTerm}`});
+    this.setState({searchTerm: this.state.searchTerm});
   }
  
   render() {

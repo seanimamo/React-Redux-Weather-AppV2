@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {connect} from 'react-redux';
-import SparkLinesGraph from '../components/fxncomponent_sparkLineGraph';
 import AnimatedSparkLinesGraph from '../components/component_animatedSparkLineGraph';
 import GoogleMap from '../components/fxnComponent_google_maps';
 
