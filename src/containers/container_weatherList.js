@@ -15,7 +15,7 @@ class WeatherList extends Component {
 
         return(
             <tr key={name}>
-                <td> <GoogleMap lat={lat} lon={lon}/></td>
+                <td> <GoogleMap lat={lat} lon={lon}/> {name} </td>
                 <td><AnimatedSparkLinesGraph data={temps} sparkLineColor='red' dataUnits='°F' /></td>
                 <td><AnimatedSparkLinesGraph data={humidities} sparkLineColor='yellow' dataUnits='%'/> </td>
                 <td><AnimatedSparkLinesGraph data={pressures} sparkLineColor='green' dataUnits='hPa'/></td>
@@ -28,7 +28,7 @@ class WeatherList extends Component {
             <table className="table">
                 <thead>
                     <tr>
-                        <th>City Name</th>
+                        <th>City</th>
                         <th>Temperature (°F)</th>
                         <th>Humidity (%)</th>
                         <th>Pressure (hPa)</th>
